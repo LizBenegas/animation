@@ -1,0 +1,193 @@
+*{
+    box-sizing: border-box;
+   margin: 0;
+    padding: 0;
+    
+}
+body {
+    background: rgb(65, 180, 206);
+ background: linear-gradient(0deg, rgb(95, 179, 198) 0%, rgb(48, 85, 208) 100%); 
+    margin: 0;
+    display: flex;
+     min-height: 100vh;
+    display: flex;
+    min-height: 100vh;
+}
+.flower {
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 400px;
+    height: 400px;
+    transform-origin: center;
+}
+
+.petal {
+    position: absolute;
+    width: 60px;
+    height: 100px;
+    background: rgb(221,63,251);
+    background: radial-gradient(circle, rgba(221,63,251,1) 0%, rgba(252,70,107,1) 100%);
+    border-radius: 50%;
+}
+.petal#dos {
+    position: absolute;
+    width: 60px;
+    height: 100px;
+    background-color: rgb(233, 127, 145);
+    border-radius: 50%;
+}
+.petal#tres {
+    position: absolute;
+    width: 60px;
+    height: 100px;
+    background-color: rgb(233, 127, 145);
+    border-radius: 50%;
+}
+.petal#dos {
+    position: absolute;
+    width: 60px;
+    height: 100px;
+    background-color: rgb(233, 127, 145);
+    border-radius: 50%;
+}
+.petal:nth-child(1) { transform: rotate(0deg) translateY(-50px); }
+.petal:nth-child(2) { transform: rotate(90deg) translateY(-50px); }
+.petal:nth-child(3) { transform: rotate(180deg) translateY(-50px); }
+.petal:nth-child(4) { transform: rotate(270deg) translateY(-50px); }
+
+/* Rotaciones de cada flor */
+#uno { transform: rotate(10deg); }
+#dos { transform: rotate(50deg); }
+#tres { transform: rotate(80deg); }
+#cuatro { transform: rotate(2deg); }
+
+.center {
+    position: absolute;
+    width: 50px;
+    height: 50px;
+    background: rgb(251,230,63);
+    background: radial-gradient(circle, rgba(251,230,63,1) 0%, rgba(252,158,70,1) 100%);
+    border-radius: 50%;
+}
+.tallo {
+    position: absolute;
+    width: 20px;  
+    height: 210px; 
+    background-color: green;
+    top: 290px; 
+    left: 190px; 
+    z-index: -1;
+}
+.suelo {
+    position: absolute;
+    width: 100%;
+    height: 100%; 
+    background-color: saddlebrown;
+    top: 50%;
+    right: 0%;
+
+}
+.hoja {
+    position: absolute;
+    width: 50px;
+    height: 30px;
+    background-color: green;
+    border-radius: 50%;
+}
+
+.hoja.left {
+    top: 350px; 
+    left: 150px;
+    transform: rotate(30deg);
+}
+
+.hoja.right {
+    top: 350px; 
+    left: 200px; 
+    transform: rotate(-30deg);
+}
+.bee {
+    position: absolute;
+    width: 80px; 
+    height: auto;
+    top: 100px;
+    left: 300px;
+    animation: fly 5s linear infinite;
+}
+
+@keyframes fly {
+    0% { transform: translateX(0) translateY(0) rotate(0deg); }
+    25% { transform: translateX(30px) translateY(-20px) rotate(10deg); }
+    50% { transform: translateX(60px) translateY(0) rotate(0deg); }
+    75% { transform: translateX(30px) translateY(20px) rotate(-10deg); }
+    100% { transform: translateX(0) translateY(0) rotate(0deg); }
+}
+.abeja2{
+    position: absolute;
+    width: 80px; 
+    height: auto;
+    top: 100px;
+    left: 100px;
+    animation: fly 5s linear infinite;
+}
+.ant {
+    position: absolute;
+    width: 60px; 
+    height: auto;
+    bottom: 20px; 
+    left: 50px;
+    animation: walk 8s linear infinite;
+}
+
+.ant2 {
+    position: absolute;
+    width: 60px; 
+    height: auto;
+    bottom: 20px; 
+    left: 50px;
+    animation: walk 8s linear infinite;
+}
+.ant3 {
+    position: absolute;
+    top: 89%;
+    width: 60px; 
+    height: auto;
+    bottom: 20px; 
+    left: 50px;
+    animation: walk 8s linear infinite;
+}
+.ant4 {
+    position: absolute;
+    top: 85%;
+    width: 60px; 
+    height: auto;
+    bottom: 20px; 
+    left: 50px;
+    animation: walk 8s linear infinite;
+}
+.ant5 {
+    position: absolute;
+    top: 79%;
+    width: 60px; 
+    height: auto;
+    bottom: 20px; 
+    left: 50px;
+    animation: walk 8s linear infinite;
+}
+@keyframes walk {
+    0% { transform: translateX(0); }
+    50% { transform: translateX(300px); }
+    100% { transform: translateX(600px); }
+}
+.sol {
+    position: absolute;
+    width: 150px;  
+    height: 150px;
+    border-radius: 50%;
+    background: radial-gradient(circle, rgba(251,201,63,1) 0%, rgba(252,216,67,1) 51%, rgba(252,231,70,1) 100%);
+    top: 50px; 
+    right: 40px; 
+    box-shadow: 0 0 50px rgba(252, 231, 70, 0.8); 
+}
